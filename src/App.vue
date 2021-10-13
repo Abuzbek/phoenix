@@ -11,7 +11,9 @@
         </div>
         <div class="grid grid-cols-12 absolute w-full h-full top-0 left-0">
           <div class="col-span-6 relative">
-            <div class="absolute flex items-center flex-col -left-4 top-1/2 transform -translate-y-1/2">
+            <div
+              class="absolute flex items-center flex-col -left-4 top-1/2 transform -translate-y-1/2"
+            >
               <div
                 class="title text-vertical font-bold text-defaultOrange text-default mb-8"
               >
@@ -48,29 +50,53 @@
           </div>
           <div class="col-span-6 flex items-center relative">
             <div class="absolute right-0 top-0">
-                <img src="./assets/headerBackTitle.svg"  alt="">
-              </div>
-            <header-title/>
+              <img src="./assets/headerBackTitle.svg" alt="" />
+            </div>
+            <header-title />
           </div>
         </div>
         <div class="absolute bottom-0 right-0">
-          <img src="./assets/lotArrows.svg" alt="">
+          <img src="./assets/lotArrows.svg" alt="" />
         </div>
       </div>
     </div>
     <section>
-      <i-love-help/>
+      <i-love-help />
     </section>
+    <section>
+      <testimonials />
+    </section>
+    <div class="container mx-auto px-4 grid grid-cols-3">
+      <news-card
+        title="Come On In. The Water’s Fine (Mostly)."
+        date="17 Apr 2020"
+        :img="img"
+      />
+    </div>
   </div>
 </template>
 <script>
 import HeaderImg from "./components/HeaderImg.vue";
 import Navbar from "./components/Navbar.vue";
-import HeaderTitle from './components/HeaderTitle.vue';
-import ILoveHelp from './components/ILoveHelp.vue';
+import HeaderTitle from "./components/HeaderTitle.vue";
+import ILoveHelp from "./components/ILoveHelp.vue";
+import Testimonials from "./components/Testimonials.vue";
+import NewsCard from "./components/NewsCard.vue";
+import img from "./assets/Rectangle.jpg";
+
 export default {
   name: "App",
-  components: { HeaderImg, Navbar, HeaderTitle, ILoveHelp },
+  components: {
+    HeaderImg,
+    Navbar,
+    HeaderTitle,
+    ILoveHelp,
+    Testimonials,
+    NewsCard,
+  },
+  data() {
+    return { img };
+  },
 };
 </script>
 

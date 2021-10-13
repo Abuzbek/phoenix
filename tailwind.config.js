@@ -183,6 +183,7 @@ module.exports = {
       xl:
         "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+      'shadowCard':'0px 6px 42px rgba(0, 0, 0, 0.103884)',
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
     },
