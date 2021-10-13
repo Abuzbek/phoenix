@@ -1,0 +1,98 @@
+<template>
+  <div class="relative">
+    <div class="slider-title active">
+      <h1 class="text-8.5xl mb-6 font-semibold text-defaultBlack">
+        We Help to <span class="text-defaultOrange">Build</span> Your Dream
+      </h1>
+      <p class="text-1xl text-defaultGray">
+        We are always availed to consult on taking your higher education to the
+        next level so you can stay competitive in the global world. We welcome
+        the opportunity to work with you "today" for "tomorrow's" better career
+        solutions.
+      </p>
+    </div>
+    <div class="slider-title">
+      <h1 class="text-8.5xl mb-6 font-semibold text-defaultBlack">
+        We Help to <span class="text-defaultOrange">Build</span> Your Dream
+      </h1>
+      <p class="text-1xl text-defaultGray">
+        We are always availed to consult on taking your higher education to the
+        next level so you can stay competitive in the global world. We welcome
+        the opportunity to work with you "today" for "tomorrow's" better career
+        solutions.
+      </p>
+    </div>
+    <div class="slider-title">
+      <h1 class="text-8.5xl mb-6 font-semibold text-defaultBlack">
+        We Help to <span class="text-defaultOrange">Build</span> Your Dream
+      </h1>
+      <p class="text-1xl text-defaultGray">
+        We are always availed to consult on taking your higher education to the
+        next level so you can stay competitive in the global world. We welcome
+        the opportunity to work with you "today" for "tomorrow's" better career
+        solutions.
+      </p>
+    </div>
+    <div class="flex items-center mt-6">
+      <a
+        href="#!"
+        class="px-11 py-6 bg-defaultBlue flex items-center text-white"
+      >
+        <span class="block mr-36 text-3xl">Apply now</span>
+        <img src="../assets/arrow-apply.svg" alt="" />
+      </a>
+    </div>
+    <div
+      class="navigation flex items-center flex-col absolute -right-4 top-1/2 transform -translate-y-1/2"
+    >
+      <div
+        @click="nextSlide"
+        class="text-default font-bold text-defaultOrange text-vertical mb-10"
+      >
+        NEXT
+      </div>
+      <span
+        class="bg-defaultOrange w-12 h-px block mx-1.5 transform rotate-90"
+      ></span>
+      <div
+        @click="prevSlide"
+        class="text-default font-bold text-defaultOrange text-vertical mt-10"
+      >
+        PREV
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { ref } from '@vue/reactivity';
+export default {
+  setup() {
+    const i = ref(0);
+
+    function nextSlide() {
+      const sliderTitle = document.querySelectorAll(".slider-title");
+      sliderTitle[i.value].classList.remove("active");
+      i.value++;
+      if (i.value == sliderTitle.length - 1) {
+        i.value = 0;
+      }
+      sliderTitle[i.value].classList.add("active");
+    }
+    function prevSlide() {
+      const sliderTitle = document.querySelectorAll(".slider-title");
+      sliderTitle[i.value].classList.remove("active");
+      i.value--;
+      if (i.value == -1) {
+        i.value = sliderTitle.length - 1;
+      }
+      sliderTitle[i.value].classList.add("active");
+    }
+    return { nextSlide, prevSlide, i };
+  },
+};
+</script>
+
+<style scoped>
+
+</style>
