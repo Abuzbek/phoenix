@@ -38,7 +38,7 @@
             </li>
           </ul>
           <a
-            href="#!"
+            href="#contactUs"
             class="
               bg-defaultOrange
               uppercase
@@ -103,11 +103,11 @@ export default {
   data: () => ({ show: false }),
   setup() {
     const links = ref([
-      { title: "Home", href: "" },
-      { title: "About Us", href: "" },
-      { title: "Our Services", href: "" },
-      { title: "Responsibilities", href: "" },
-      { title: "Country", href: "" },
+      { title: "Home", href: "#home" },
+      { title: "About Us", href: "#about" },
+      { title: "Our Services", href: "#service" },
+      { title: "Responsibilities", href: "#responsibilty" },
+      { title: "Country", href: "#country" },
     ]);
     const scrollOffset = ref(0);
     onMounted(() => {

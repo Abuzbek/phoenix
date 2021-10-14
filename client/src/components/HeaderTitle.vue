@@ -42,7 +42,7 @@
       </div>
       <div class="items-center mt-6 xl:flex hidden">
         <a
-          href="#!"
+          href="#contactUs"
           class="px-9 py-5 bg-defaultBlue flex items-center text-white"
         >
           <span class="block mr-36 text-2xl">Apply now</span>

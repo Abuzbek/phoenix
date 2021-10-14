@@ -1,7 +1,7 @@
 <template>
   <div class="pt-44">
     <Navbar />
-    <div class="w-11/12 mx-auto px-4">
+    <div class="w-11/12 mx-auto px-4" id="home">
       <div class="relative pb-20 xl:block hidden">
         <div class="grid grid-cols-12">
           <div class="col-span-8">
@@ -156,19 +156,19 @@
         </div>
       </div>
     </div>
-    <section>
+    <section id="service">
       <i-love-help />
     </section>
-    <section>
+    <section id="about">
       <about-us />
     </section>
     <section>
       <study-sphere />
     </section>
-    <section>
+    <section id="country">
       <map-section />
     </section>
-    <section>
+    <section id="responsibilty">
       <why-are-we />
     </section>
     <section>
@@ -183,7 +183,7 @@
     <section>
       <news />
     </section>
-    <section>
+    <section id="contactUs">
       <contact-us />
     </section>
     <div>
@@ -232,6 +232,10 @@ export default {
 </script>
 
 <style>
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 body {
   font-family: "Proxima Nova" !important;
 }
@@ -274,4 +278,5 @@ p {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
+
 </style>
