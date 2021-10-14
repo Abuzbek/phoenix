@@ -1,7 +1,7 @@
 <template>
   <div class="pt-12 pb-16">
-    <div class="1xl:container mx-auto px-4">
-        <div class="grid grid-cols-7">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-7  gap-4">
           <div class="col-span-2 flex items-center">
             <div>
               <h3 class="text-20px text-defaultOrange mb-3">Our services</h3>

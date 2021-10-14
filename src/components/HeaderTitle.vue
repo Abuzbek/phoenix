@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <div class="slider-title active">
-      <h1 class="text-8.5xl mb-6 font-semibold text-defaultBlack">
+      <h1 class="text-8xl mb-6 font-semibold text-defaultBlack">
         We Help to <span class="text-defaultOrange">Build</span> Your Dream
       </h1>
       <p class="text-1xl text-defaultGray">
@@ -12,7 +12,7 @@
       </p>
     </div>
     <div class="slider-title">
-      <h1 class="text-8.5xl mb-6 font-semibold text-defaultBlack">
+      <h1 class="text-8xl mb-6 font-semibold text-defaultBlack">
         We Help to <span class="text-defaultOrange">Build</span> Your Dream
       </h1>
       <p class="text-1xl text-defaultGray">
@@ -23,7 +23,7 @@
       </p>
     </div>
     <div class="slider-title">
-      <h1 class="text-8.5xl mb-6 font-semibold text-defaultBlack">
+      <h1 class="text-8xl mb-6 font-semibold text-defaultBlack">
         We Help to <span class="text-defaultOrange">Build</span> Your Dream
       </h1>
       <p class="text-1xl text-defaultGray">
@@ -47,7 +47,7 @@
     >
       <div
         @click="nextSlide"
-        class="text-default font-bold text-defaultOrange text-vertical mb-10"
+        class="text-default cursor-pointer font-bold text-defaultOrange text-vertical mb-10"
       >
         NEXT
       </div>
@@ -56,7 +56,7 @@
       ></span>
       <div
         @click="prevSlide"
-        class="text-default font-bold text-defaultOrange text-vertical mt-10"
+        class="text-default cursor-pointer font-bold text-defaultOrange text-vertical mt-10"
       >
         PREV
       </div>

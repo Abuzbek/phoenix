@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="w-full z-50 bg-white bg-opacity-90 fixed top-0 left-0 right-0 backdrop-filter backdrop-blur-lg transition-all duration-300"
+    class="w-full z-50 bg-white fixed top-0 left-0 right-0 backdrop-filter backdrop-blur-lg transition-all duration-300"
     :class="scrollOffset ? 'py-4' : 'py-14'"
   >
-    <div class="container mx-auto px-4">
+    <div class="w-11/12 mx-auto px-4">
       <div class="flex flex-wrap items-center justify-between">
         <div class="navbar-brand">
           <img src="../assets/logo.svg" alt="" />
