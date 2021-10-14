@@ -14,7 +14,7 @@
         <div
           v-for="(n, i) in card"
           :key="i"
-          :data-aos-delay="500 * i"
+          :data-aos-delay="300 * i"
           data-aos-duration="1000"
           data-aos="fade-up"
         >

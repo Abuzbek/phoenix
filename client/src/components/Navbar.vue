@@ -95,7 +95,6 @@
     </div>
   </nav>
 </template>
-
 <script>
 import { ref } from "@vue/reactivity";
 import { onMounted } from "@vue/runtime-core";
