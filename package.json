@@ -9,11 +9,10 @@
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
+    "aos": "^2.3.4",
     "core-js": "^3.6.5",
-    "gsap": "^3.8.0",
     "swiper": "^7.0.8",
-    "vue": "^3.0.0",
-    "vue-awesome-swiper": "^4.1.1"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

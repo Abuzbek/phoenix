@@ -1,14 +1,19 @@
 <template>
   <div>
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-2 gap-8">
-        <div>
+      <div class="grid xl:grid-cols-2 gap-8">
+        <div :data-aos-delay="500" data-aos-duration="1000" data-aos="fade-up">
           <message-photo />
         </div>
-        <div class="flex items-center">
+        <div
+          :data-aos-delay="1000"
+          data-aos-duration="1000"
+          data-aos="fade-up"
+          class="flex items-center"
+        >
           <div>
             <h3 class="text-20px text-defaultOrange mb-3">Why are we?</h3>
-            <h2 class="text-40px font-bold text-defaultBlack mb-7">
+            <h2 class="sm:text-40px text-3xl font-bold text-defaultBlack mb-7">
               Why choose Phoenix?
             </h2>
             <p class="text-title text-defaultGray mb-4">
@@ -45,7 +50,8 @@
               href="#!"
               class="flex items-center text-xl text-defaultOrange mt-7"
               ><span class="mr-7">More details</span>
-              <div class="icon"><img src="../assets/arrowOrange.svg" alt="" /></div
+              <div class="icon">
+                <img src="../assets/arrowOrange.svg" alt="" /></div
             ></a>
           </div>
         </div>

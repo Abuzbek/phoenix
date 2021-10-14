@@ -1,7 +1,9 @@
 <template>
   <div class="text-center py-28">
     <div class="container mx-auto px-4">
-      <div class="top-title  mb-10">
+      <div class="top-title  mb-10" :data-aos-delay="500"
+              data-aos-duration="1000"
+              data-aos="fade-down">
         <h3 class="text-20px text-defaultOrange mb-3">Country</h3>
         <h2 class="text-40px font-bold text-defaultBlack mb-2">
           Countries we covered

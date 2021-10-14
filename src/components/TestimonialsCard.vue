@@ -1,19 +1,17 @@
 <template>
   <div class="card border border-gray-700 p-8">
-    <div class="headline flex items-center mb-7">
+    <div class="headline flex items-center flex-wrap mb-7">
       <div class="card-img rounded-full">
-        <img src="../assets/user.png" class="rounded-full mr-6" alt="" />
+        <img :src="img" class="rounded-full mr-6" alt="" />
       </div>
       <div class="card-heading">
-        <h3 class="text-2xl text-defaultBlack">John Zlathan</h3>
-        <span class="text-lg text-defaultGray">Co-Founder</span>
+        <h3 class="text-2xl text-defaultBlack">{{ name }}n</h3>
+        <span class="text-lg text-defaultGray">{{ position }}</span>
       </div>
     </div>
     <div class="comment mb-4">
-      <p class="text-xl text-defaultGray"> 
-        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy
-        eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum
-        dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”
+      <p class="text-xl text-defaultGray">
+        {{ text }}
       </p>
     </div>
     <div class="comma flex">
@@ -24,7 +22,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["text", "name", "position", "img"],
+};
 </script>
 
 <style></style>

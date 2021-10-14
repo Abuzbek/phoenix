@@ -2,7 +2,7 @@
   <div class="pt-44">
     <Navbar />
     <div class="w-11/12 mx-auto px-4">
-      <div class="relative pb-20">
+      <div class="relative pb-20 xl:block hidden">
         <div class="grid grid-cols-12">
           <div class="col-span-8">
             <header-img />
@@ -12,15 +12,38 @@
         <div class="grid grid-cols-12 absolute w-full h-full top-0 left-0">
           <div class="col-span-6 relative">
             <div
-              class="absolute flex items-center flex-col -left-4 top-1/2 transform -translate-y-1/2"
+              class="
+                absolute
+                flex
+                items-center
+                flex-col
+                -left-4
+                top-1/2
+                transform
+                -translate-y-1/2
+              "
             >
               <div
-                class="title text-vertical font-bold text-defaultOrange text-default mb-8"
+                class="
+                  title
+                  text-vertical
+                  font-bold
+                  text-defaultOrange text-default
+                  mb-8
+                "
               >
                 SOCIAL MEDIA
               </div>
               <span
-                class="bg-defaultOrange w-12 h-px block mx-1.5 transform rotate-90"
+                class="
+                  bg-defaultOrange
+                  w-12
+                  h-px
+                  block
+                  mx-1.5
+                  transform
+                  rotate-90
+                "
               ></span>
               <div class="socila-links mt-8">
                 <ul>
@@ -52,11 +75,84 @@
             <div class="absolute right-0 top-0">
               <img src="./assets/headerBackTitle.svg" alt="" />
             </div>
-            <header-title />
+            <div>
+              <header-title />
+            </div>
           </div>
         </div>
         <div class="absolute bottom-0 right-0">
           <img src="./assets/lotArrows.svg" alt="" />
+        </div>
+      </div>
+      <div class="relative pb-20 xl:hidden block">
+        <div class="grid xl:grid-cols-12 grid-cols-6">
+          <div class="col-span-6 relative">
+            <div
+              class="
+                absolute
+                flex
+                items-center
+                flex-col
+                -left-4
+                top-1/2
+                transform
+                -translate-y-1/2
+              "
+            >
+              <div
+                class="
+                  title
+                  text-vertical
+                  font-bold
+                  text-defaultOrange text-default
+                  mb-8
+                "
+              >
+                SOCIAL MEDIA
+              </div>
+              <span
+                class="
+                  bg-defaultOrange
+                  w-12
+                  h-px
+                  block
+                  mx-1.5
+                  transform
+                  rotate-90
+                "
+              ></span>
+              <div class="socila-links mt-8">
+                <ul>
+                  <li>
+                    <a href="#!" class="py-2.5 block">
+                      <img src="./assets/Icon-1.svg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" class="py-2.5 block">
+                      <img src="./assets/Icon-2.svg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" class="py-2.5 block">
+                      <img src="./assets/Icon-3.svg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" class="py-2.5 block">
+                      <img src="./assets/Icon-4.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <header-img :ipad="true" />
+          </div>
+          <div class="col-span-6 flex items-center relative mt-8">
+            <div class="w-full">
+              <header-xl-title :center="true" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -76,18 +172,22 @@
       <why-are-we />
     </section>
     <section>
-            <our-team />
+      <our-team />
+    </section>
+    <section>
+      <video-section />
     </section>
     <section>
       <testimonials />
     </section>
-    
-    <div class="container mx-auto px-4 grid grid-cols-3">
-      <news-card
-        title="Come On In. The Water’s Fine (Mostly)."
-        date="17 Apr 2020"
-        :img="img"
-      />
+    <section>
+      <news />
+    </section>
+    <section>
+      <contact-us />
+    </section>
+    <div>
+      <footer-botton />
     </div>
   </div>
 </template>
@@ -95,41 +195,39 @@
 import HeaderImg from "./components/HeaderImg.vue";
 import Navbar from "./components/Navbar.vue";
 import HeaderTitle from "./components/HeaderTitle.vue";
-<<<<<<< HEAD
-import ILoveHelp from "./components/Servises.vue";
 import AboutUs from "./components/AboutUs.vue";
 import StudySphere from "./components/StudySphere.vue";
 import MapSection from "./components/MapSection.vue";
 import WhyAreWe from "./components/WhyAreWe.vue";
 import OurTeam from "./components/OurTeam.vue";
-=======
-import ILoveHelp from "./components/ILoveHelp.vue";
+import ILoveHelp from "./components/Servises.vue";
 import Testimonials from "./components/Testimonials.vue";
-import NewsCard from "./components/NewsCard.vue";
-import img from "./assets/Rectangle.jpg";
-
->>>>>>> 9818f63f9002363a284631fb80f0afad64daddb1
+import News from "./components/News.vue";
+import VideoSection from "./components/VideoSection.vue";
+import ContactUs from "./components/ContactUs.vue";
+import FooterBotton from "./components/FooterBotton.vue";
+import HeaderXlTitle from "./components/HeaderXlTitle.vue";
 export default {
   name: "App",
   components: {
+    AboutUs,
     HeaderImg,
     Navbar,
     HeaderTitle,
     ILoveHelp,
-<<<<<<< HEAD
-    AboutUs,
     StudySphere,
     MapSection,
     WhyAreWe,
     OurTeam,
-=======
     Testimonials,
-    NewsCard,
+    News,
+    VideoSection,
+    ContactUs,
+    FooterBotton,
+    HeaderXlTitle,
   },
-  data() {
-    return { img };
->>>>>>> 9818f63f9002363a284631fb80f0afad64daddb1
-  },
+  data() {},
+  mounted() {},
 };
 </script>
 
@@ -149,6 +247,23 @@ p {
   opacity: 0;
 }
 .slider-title.active {
+  position: relative;
+  top: 0px;
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+.slider-title1 {
+  position: absolute;
+  top: -100px;
+  transition: 0.73s;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider-title1.active {
   position: relative;
   top: 0px;
   width: auto;

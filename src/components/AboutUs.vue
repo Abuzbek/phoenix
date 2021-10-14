@@ -5,29 +5,33 @@
         <img src="../assets/Ellipse.svg" alt="" />
       </div>
       <div class="container mx-auto px-4 relative">
-        <div class="grid grid-cols-2">
-          <div>
+        <div class="grid xl:grid-cols-2 gap-5">
+          <div class="xl:mb-0 mb-8" data-aos-delay="500" data-aos="fade-up">
             <img
               src="../assets/young-people-talking-at-table.png"
-              class="young-people-talk relative z-10"
+              class="young-people-talk relative z-10 xl:w-auto w-full"
               alt=""
             />
           </div>
-          <div class="flex justify-center flex-col">
+          <div
+            class="flex justify-center flex-col"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos="fade-up"
+          >
             <h3 class="text-20px text-defaultOrange mb-3">About Us</h3>
-            <h2 class="text-40px font-bold text-defaultBlack mb-7">
-              The act or experience of one that learns a computer program that
-              makes learning fun
+            <h2 class="sm:text-40px text-2xl font-bold text-defaultBlack mb-7">
+              The act or experience of one that learns a computer program that makes
+              learning fun
             </h2>
             <p class="text-title text-defaultGray mb-4">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
-              nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy
+              eirmod tempor invidunt ut labore et dolore magn aliq erat.
             </p>
             <p class="text-title text-defaultGray">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
-              nonumy eirmod tempor invidunt ut labore et dolore magn aliq
-              erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              di nonumy.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy
+              eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor
+              sit amet, consetetur sadipscing elitr, sed di nonumy.
             </p>
             <a href="#!" class="flex items-center text-xl text-defaultBlue mt-7"
               ><span class="mr-7">Learn more</span>
@@ -36,13 +40,19 @@
           </div>
         </div>
       </div>
-      <div class="absolute bottom-0 right-0">
+      <div class="absolute bottom-0 right-0 sm:block hidden">
         <img src="../assets/zig-zag.svg" alt="" />
       </div>
     </div>
     <div class="container mx-auto px-4 relative">
-      <div class="grid grid-cols-4 gap-4 mt-28 mb-28">
-        <div v-for="(n, i) in card" :key="i">
+      <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 mt-28 mb-28">
+        <div
+          v-for="(n, i) in card"
+          :key="i"
+          data-aos="fade-up"
+          :data-aos-delay="500 * i"
+          data-aos-duration="1000"
+        >
           <about-card v-bind="n" />
         </div>
       </div>

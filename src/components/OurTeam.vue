@@ -1,17 +1,26 @@
 <template>
   <div class="py-28">
     <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center mb-11">
-        <div>
+      <div class="flex justify-between items-center flex-wrap mb-11">
+        <div
+          :data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos="fade-right"
+        >
           <h3 class="text-20px text-defaultOrange mb-3">Our team</h3>
-          <h2 class="text-40px font-bold mb-2 text-defaultBlack">
+          <h2 class="sm:text-40px text-3xl font-bold mb-2 text-defaultBlack">
             Explore Experienced Instructor
           </h2>
           <p class="text-title text-defaultGray">
             Executive Trade International is an University Application Centre
           </p>
         </div>
-        <div class="navs flex">
+        <div
+          class="navs flex"
+          :data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos="fade-left"
+        >
           <div class="prev-navigator mx-2 navigator">
             <svg
               width="40"
@@ -45,7 +54,14 @@
       <div class="slider">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="(n, i) in card" :key="i">
+            <div
+              class="swiper-slide"
+              v-for="(n, i) in card"
+              :key="i"
+              :data-aos-delay="500 * i"
+              data-aos-duration="1000"
+              data-aos="fade-up"
+            >
               <team-card v-bind="n" />
             </div>
           </div>
@@ -84,11 +100,30 @@ export default {
   setup() {
     onMounted(() => {
       new Swiper(".mySwiper", {
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 30,
+        grabCursor: true,
         navigation: {
           nextEl: ".next-navigator",
           prevEl: ".prev-navigator",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
         },
       });
     });

@@ -1,6 +1,7 @@
 <template>
-  <div class="lg:w-9/12">
+  <div class="xl:w-9/12 w-full" data-aos="fade-up" data-aos-duration="1000">
     <svg
+      v-if="!ipad"
       width="100%"
       height="100%"
       viewBox="0 0 938 884"
@@ -484,11 +485,16 @@
         />
       </defs>
     </svg>
+    <div class="flex items-center justify-center" v-if="ipad">
+      <img src="../assets/header-ipad-img.png" alt="" />
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["ipad"],
+};
 </script>
 
 <style></style>
