@@ -76,20 +76,39 @@
       <why-are-we />
     </section>
     <section>
-      <our-team />
+            <our-team />
     </section>
+    <section>
+      <testimonials />
+    </section>
+    
+    <div class="container mx-auto px-4 grid grid-cols-3">
+      <news-card
+        title="Come On In. The Water’s Fine (Mostly)."
+        date="17 Apr 2020"
+        :img="img"
+      />
+    </div>
   </div>
 </template>
 <script>
 import HeaderImg from "./components/HeaderImg.vue";
 import Navbar from "./components/Navbar.vue";
 import HeaderTitle from "./components/HeaderTitle.vue";
+<<<<<<< HEAD
 import ILoveHelp from "./components/Servises.vue";
 import AboutUs from "./components/AboutUs.vue";
 import StudySphere from "./components/StudySphere.vue";
 import MapSection from "./components/MapSection.vue";
 import WhyAreWe from "./components/WhyAreWe.vue";
 import OurTeam from "./components/OurTeam.vue";
+=======
+import ILoveHelp from "./components/ILoveHelp.vue";
+import Testimonials from "./components/Testimonials.vue";
+import NewsCard from "./components/NewsCard.vue";
+import img from "./assets/Rectangle.jpg";
+
+>>>>>>> 9818f63f9002363a284631fb80f0afad64daddb1
 export default {
   name: "App",
   components: {
@@ -97,11 +116,19 @@ export default {
     Navbar,
     HeaderTitle,
     ILoveHelp,
+<<<<<<< HEAD
     AboutUs,
     StudySphere,
     MapSection,
     WhyAreWe,
     OurTeam,
+=======
+    Testimonials,
+    NewsCard,
+  },
+  data() {
+    return { img };
+>>>>>>> 9818f63f9002363a284631fb80f0afad64daddb1
   },
 };
 </script>
