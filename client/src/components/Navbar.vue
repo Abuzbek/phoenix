@@ -17,11 +17,8 @@
   >
     <div class="lg:w-11/12 w-full mx-auto md:px-4 px-2">
       <div class="flex items-center justify-between">
-        <a href="#!" class="navbar-brand lg:block hidden">
-          <img src="../assets/logo.svg" alt="" />
-        </a>
-        <a href="#!" class="navbar-brand lg:hidden block">
-          <img src="../assets/logo-mobile.svg" alt="" class="w-3/4" />
+        <a href="#!" class="navbar-brand">
+          <img src="../assets/logo.svg" class="sm:w-auto w-40" alt="" />
         </a>
         <div class="navbar-content flex items-center">
           <ul class="items-center xl:flex hidden">
@@ -77,7 +74,7 @@
                 <ul class="flex flex-col">
                   <li v-for="(n, i) in links" :key="i">
                     <a
-                      class="2xl:px-7 px-4 pt-3 2xl:text-xl text-base uppercase"
+                      class="2xl:px-7 px-4 pt-3 2xl:text-xl text-base uppercase inline-block w-full"
                       :href="n.href"
                       ><span
                         class="pb-3 border-b-2 border-transparent"

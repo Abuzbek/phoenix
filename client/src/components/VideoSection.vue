@@ -27,31 +27,13 @@
       <div class="grid grid-cols-12">
         <div></div>
         <div class="video md:col-span-10 col-span-12 relative">
-          <div
-            class="
-              play-btn
-              absolute
-              left-1/2
-              top-1/2
-              transform
-              -translate-x-1/2 -translate-y-1/2
-              z-10
-            "
-          >
-            <img src="../assets/play-btn.svg" alt="" />
-          </div>
           <div class="absolute -top-7 -right-20 md:block hidden">
             <img src="../assets/frames/frame-2.svg" alt="" />
           </div>
           <div class="absolute -bottom-7 -left-20 md:block hidden">
             <img src="../assets/frames/frames-1.svg" alt="" />
           </div>
-          <img
-            src="../assets/video-placeholder.jpg"
-            class="max-w-full h-auto w-full"
-            style="filter: drop-shadow(40px 50px 60px rgba(0, 0, 0, 0.19))"
-            alt=""
-          />
+          <!-- <video :src="video"></video> -->
         </div>
       </div>
     </div>
@@ -59,15 +41,48 @@
 </template>
 
 <script>
+import videojs from "video.js";
+// import video from "../assets/global_study.mp4";
 export default {
   data: () => {
-    return {};
+    return {
+      player: null,
+      showVideo: false,
+      // video,
+    };
   },
-  setup() {},
+  methods: {
+    showVideoHandler() {
+      this.showVideo = !this.showVideo;
+    },
+  },
+  mounted() {
+    this.player = videojs(
+      document.getElementById("videoPlayer"),
+      this.option,
+      function onPlayerReady() {
+        console.log("onPlayerReady", this);
+      }
+    );
+  },
+  beforeUnmount() {
+    if (this.player) {
+      this.player.dispose();
+    }
+  },
 };
 </script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 .text-title {
   font-size: 22px;
   line-height: 29px;
