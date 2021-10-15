@@ -4,8 +4,7 @@
       w-full
       z-50
       bg-white
-      xl:fixed
-      absolute
+      fixed
       top-0
       left-0
       right-0
