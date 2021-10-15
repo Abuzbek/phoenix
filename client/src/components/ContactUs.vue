@@ -40,7 +40,7 @@
               </p>
             </div>
             <div class="submit-form">
-              <form @submit.prevent>
+              <form @submit.prevent="submitHandler">
                 <div class="name mb-5">
                   <label for="name" class="block mb-3 text-lg font-semibold"
                     >Your Name</label
@@ -50,6 +50,7 @@
                     name=""
                     class="border border-gray-400 w-full p-6 rounded-md"
                     id="name"
+                    v-model="name"
                   />
                 </div>
                 <div class="name mb-5">
@@ -61,6 +62,7 @@
                     name=""
                     class="border border-gray-400 w-full p-6 rounded-md"
                     id="email"
+                    v-model="email"
                   />
                 </div>
                 <div class="name mb-5">
@@ -80,6 +82,7 @@
                     "
                     cols="30"
                     rows="10"
+                    v-model="message"
                   ></textarea>
                 </div>
                 <div class="flex justify-end items-center">
@@ -117,8 +120,30 @@
 
 <script>
 import ContactFrame from "./ContactFrame.vue";
+import axios from "axios";
 export default {
   components: { ContactFrame },
+  data: () => {
+    return {
+      name: "",
+      email: "",
+      message: "",
+    };
+  },
+  methods: {
+    async submitHandler() {
+      console.log({
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      });
+      axios.post("/gmail", {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      });
+    },
+  },
 };
 </script>
 
