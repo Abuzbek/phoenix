@@ -8,36 +8,30 @@
   >
     <div class="xl:max-w-full max-w-2xl xl:mx-0 mx-auto">
       <div class="slider-title active">
-        <h1 class="2xl:text-8xl text-7xl mb-6 font-semibold text-defaultBlack">
-          We Help to <span class="text-defaultOrange">Build</span> Your Dream
-        </h1>
+        <h1
+          class="2xl:text-8xl text-7xl mb-6 font-semibold text-defaultBlack"
+          v-html="$t('header.title')"
+        ></h1>
         <p class="2xl:text-1xl text-xl text-defaultGray">
-          We are always availed to consult on taking your higher education to
-          the next level so you can stay competitive in the global world. We
-          welcome the opportunity to work with you "today" for "tomorrow's"
-          better career solutions.
+          {{$t("header.text")}}
         </p>
       </div>
       <div class="slider-title">
-        <h1 class="2xl:text-8xl text-7xl mb-6 font-semibold text-defaultBlack">
-          We Help to <span class="text-defaultOrange">Build</span> Your Dream
-        </h1>
+        <h1
+          class="2xl:text-8xl text-7xl mb-6 font-semibold text-defaultBlack"
+          v-html="$t('header.title')"
+        ></h1>
         <p class="2xl:text-1xl text-xl text-defaultGray">
-          We are always availed to consult on taking your higher education to
-          the next level so you can stay competitive in the global world. We
-          welcome the opportunity to work with you "today" for "tomorrow's"
-          better career solutions.
+          {{$t("header.text")}}
         </p>
       </div>
       <div class="slider-title">
-        <h1 class="2xl:text-8xl text-7xl mb-6 font-semibold text-defaultBlack">
-          We Help to <span class="text-defaultOrange">Build</span> Your Dream
-        </h1>
+        <h1
+          class="2xl:text-8xl text-7xl mb-6 font-semibold text-defaultBlack"
+          v-html="$t('header.title')"
+        ></h1>
         <p class="2xl:text-1xl text-xl text-defaultGray">
-          We are always availed to consult on taking your higher education to
-          the next level so you can stay competitive in the global world. We
-          welcome the opportunity to work with you "today" for "tomorrow's"
-          better career solutions.
+          {{$t("header.text")}}
         </p>
       </div>
       <div class="items-center mt-6 xl:flex hidden">
@@ -45,7 +39,7 @@
           href="#contactUs"
           class="px-9 py-5 bg-defaultBlue flex items-center text-white"
         >
-          <span class="block mr-36 text-2xl">Apply now</span>
+          <span class="block mr-36 text-2xl">{{$t("header.Apply")}}</span>
           <img src="../assets/arrow-apply.svg" alt="" />
         </a>
       </div>
@@ -72,7 +66,7 @@
             mb-10
           "
         >
-          NEXT
+          {{$t("header.next")}}
         </div>
         <span
           class="bg-defaultOrange w-12 h-px block mx-1.5 transform rotate-90"
@@ -87,7 +81,7 @@
             mt-10
           "
         >
-          PREV
+          {{$t("header.prev")}}
         </div>
       </div>
     </div>

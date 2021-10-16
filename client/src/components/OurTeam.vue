@@ -7,12 +7,14 @@
           data-aos-duration="1000"
           data-aos="fade-right"
         >
-          <h3 class="text-20px text-defaultOrange mb-3">Our team</h3>
+          <h3 class="text-20px text-defaultOrange mb-3">
+            {{ $t("team.title") }}
+          </h3>
           <h2 class="sm:text-40px text-3xl font-bold mb-2 text-defaultBlack">
-            Explore Experienced Instructor
+            {{ $t("team.sub-title") }}
           </h2>
           <p class="text-title text-defaultGray">
-            Executive Trade International is an University Application Centre
+            {{ $t("team.text") }}
           </p>
         </div>
         <div
@@ -62,7 +64,7 @@
               data-aos-duration="1000"
               data-aos="fade-up"
             >
-              <team-card v-bind="n" />
+              <team-card v-bind="n" :idx="i" />
             </div>
           </div>
         </div>
@@ -86,14 +88,14 @@ export default {
   data: () => {
     return {
       card: [
-        { img: img1, name: "John Zlathan", position: "CEO" },
-        { img: img2, name: "John Zlathan", position: "Co-Founder" },
-        { img: img3, name: "John Zlathan", position: "Software Developer" },
-        { img: img4, name: "John Zlathan", position: "CEO" },
-        { img: img1, name: "John Zlathan", position: "CEO" },
-        { img: img2, name: "John Zlathan", position: "Co-Founder" },
-        { img: img3, name: "John Zlathan", position: "Software Developer" },
-        { img: img4, name: "John Zlathan", position: "CEO" },
+        { img: img1, callLang: "team.card" },
+        { img: img2, callLang: "team.card" },
+        { img: img3, callLang: "team.card" },
+        { img: img4, callLang: "team.card" },
+        { img: img1, callLang: "team.card" },
+        { img: img2, callLang: "team.card" },
+        { img: img3, callLang: "team.card" },
+        { img: img4, callLang: "team.card" },
       ],
     };
   },

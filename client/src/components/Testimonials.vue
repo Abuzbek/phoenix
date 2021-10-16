@@ -9,10 +9,10 @@
         >
           <h3 class="text-20px text-defaultOrange mb-3">Our clients</h3>
           <h2 class="text-40px font-bold mb-2 text-defaultBlack">
-            Testimonials
+            {{ $t("clients.sub-title") }}
           </h2>
           <p class="text-title text-defaultGray">
-            Executive Trade International is an University Application Centre
+            {{ $t("clients.text") }}
           </p>
         </div>
         <div
@@ -62,7 +62,7 @@
               data-aos-duration="1000"
               data-aos="fade-up"
             >
-              <TestimonialsCard v-bind="n" />
+              <TestimonialsCard v-bind="n" :idx="i" />
             </div>
           </div>
         </div>
@@ -81,33 +81,23 @@ export default {
   setup() {
     const card = ref([
       {
-        name: "John Zlathan",
-        position: "Co-Founder",
-        text: "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        callLang: "clients.card",
         img,
       },
       {
-        name: "John Zlathan",
-        position: "Co-Founder",
-        text: "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        callLang: "clients.card",
         img,
       },
       {
-        name: "John Zlathan",
-        position: "Co-Founder",
-        text: "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        callLang: "clients.card",
         img,
       },
       {
-        name: "John Zlathan",
-        position: "Co-Founder",
-        text: "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        callLang: "clients.card",
         img,
       },
       {
-        name: "John Zlathan",
-        position: "Co-Founder",
-        text: "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        callLang: "clients.card",
         img,
       },
     ]);

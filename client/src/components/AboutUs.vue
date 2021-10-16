@@ -19,19 +19,17 @@
             data-aos-duration="1000"
             data-aos="fade-up"
           >
-            <h3 class="text-20px text-defaultOrange mb-3">About Us</h3>
+            <h3 class="text-20px text-defaultOrange mb-3">
+              {{ $t("about.title") }}
+            </h3>
             <h2 class="sm:text-40px text-2xl font-bold text-defaultBlack mb-7">
-              The act or experience of one that learns a computer program that makes
-              learning fun
+              {{ $t("about.sub-title") }}
             </h2>
             <p class="text-title text-defaultGray mb-4">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy
-              eirmod tempor invidunt ut labore et dolore magn aliq erat.
+              {{ $t("about.text-1") }}
             </p>
             <p class="text-title text-defaultGray">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy
-              eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor
-              sit amet, consetetur sadipscing elitr, sed di nonumy.
+              {{ $t("about.text-2") }}
             </p>
             <a href="#!" class="flex items-center text-xl text-defaultBlue mt-7"
               ><span class="mr-7">Learn more</span>
@@ -53,7 +51,7 @@
           :data-aos-delay="500 * i"
           data-aos-duration="1000"
         >
-          <about-card v-bind="n" />
+          <about-card v-bind="n" :idx="i" />
         </div>
       </div>
     </div>
@@ -69,26 +67,22 @@ export default {
       card: [
         {
           color: "bg-ligth-card-1",
-          text: "Our students study abroud",
-          title: "100+",
+          callLang: "about.card",
           titleColor: "text-dark-card-1",
         },
         {
           color: "bg-ligth-card-2",
-          text: "Universities we’re working with",
-          title: "50+",
+          callLang: "about.card",
           titleColor: "text-dark-card-2",
         },
         {
           color: "bg-ligth-card-3",
-          text: "People we met",
-          title: "1000+",
+          callLang: "about.card",
           titleColor: "text-dark-card-3",
         },
         {
           color: "bg-ligth-card-4",
-          text: "Minutes we were on plane",
-          title: "1000+",
+          callLang: "about.card",
           titleColor: "text-dark-card-4",
         },
       ],

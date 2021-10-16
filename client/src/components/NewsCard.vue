@@ -12,7 +12,7 @@
       </div>
       <h3
         class="text-1xl font-semibold text-defaultBlack mt-4"
-        v-html="title"
+        v-html="$t(`${callLang}[${idx}].text`)"
       ></h3>
     </div>
   </div>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  props: ["title", "date", "img"],
+  props: ["callLang", "date", "img", "idx"],
 };
 </script>
 

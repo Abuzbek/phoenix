@@ -8,12 +8,14 @@
         data-aos="fade-down"
       >
         <div>
-          <h3 class="text-20px text-defaultOrange mb-3">News</h3>
+          <h3 class="text-20px text-defaultOrange mb-3">
+            {{ $t("news.title") }}
+          </h3>
           <h2 class="text-40px font-bold mb-2 text-defaultBlack">
-            Lots of new Blogs & News
+            {{ $t("news.sub-title") }}
           </h2>
           <p class="text-title text-defaultGray">
-            Executive Trade International is an University Application Centre
+            {{ $t("news.text") }}
           </p>
         </div>
       </div>
@@ -26,7 +28,7 @@
           data-aos-duration="1000"
           data-aos="fade-up"
         >
-          <news-card v-bind="n" />
+          <news-card v-bind="n" :idx="i" />
         </div>
       </div>
     </div>
@@ -44,17 +46,17 @@ export default {
     return {
       card: [
         {
-          title: "Come On In. The Water’s Fine <br/> (Mostly).",
+          callLang: "news.card",
           date: "17 Apr 2020",
           img: img1,
         },
         {
-          title: "Trump Lays Plans to Reverse Obama’s Climate Change Legacy",
+          callLang: "news.card",
           date: "17 Apr 2020",
           img: img2,
         },
         {
-          title: "How a Little Bit of Hydra Regrows a Whole Animal",
+          callLang: "news.card",
           date: "17 Apr 2020",
           img: img3,
         },

@@ -28,11 +28,62 @@
                 ><span
                   class="pb-3 border-b-2 border-transparent"
                   :class="{ active: 'border-defaultOrange' }"
-                  >{{ n.title }}</span
+                  >{{ $t(`navbar.${n.title}`) }}</span
                 ></a
               >
             </li>
           </ul>
+          <div class="px-4">
+            <div
+              class="
+                relative
+                inline-block
+                w-10
+                mr-2
+                align-middle
+                select-none
+                transition
+                duration-200
+                ease-in
+              "
+            >
+              <input
+                type="checkbox"
+                name="toggle"
+                id="toggle"
+                v-model="changeLang"
+                class="
+                  toggle-checkbox
+                  absolute
+                  block
+                  w-6
+                  h-6
+                  rounded-full
+                  bg-white
+                  border-4
+                  appearance-none
+                  cursor-pointer
+                "
+              />
+              <label
+                for="toggle"
+                class="
+                  toggle-label
+                  block
+                  overflow-hidden
+                  h-6
+                  rounded-full
+                  bg-gray-300
+                  cursor-pointer
+                "
+              ></label>
+            </div>
+            <label
+              for="toggle"
+              class="cursor-pointer 2xl:text-xl text-base uppercase"
+              >{{ $t("lang") }}</label
+            >
+          </div>
           <a
             href="#contactUs"
             class="
@@ -49,7 +100,7 @@
               lg:px-10
               px-5
             "
-            >{{ "Apply" }}</a
+            >{{ $t(`navbar.Apply`) }}</a
           >
           <button @click="show = !show" class="ml-7 xl:hidden block">
             <img src="../assets/btn-nav.svg" alt="" />
@@ -73,12 +124,21 @@
                 <ul class="flex flex-col">
                   <li v-for="(n, i) in links" :key="i">
                     <a
-                      class="2xl:px-7 px-4 pt-3 2xl:text-xl text-base uppercase inline-block w-full"
+                      class="
+                        2xl:px-7
+                        px-4
+                        pt-3
+                        2xl:text-xl
+                        text-base
+                        uppercase
+                        inline-block
+                        w-full
+                      "
                       :href="n.href"
                       ><span
                         class="pb-3 border-b-2 border-transparent"
                         :class="{ active: 'border-defaultOrange' }"
-                        >{{ n.title }}</span
+                        >{{ $t(`navbar.${n.title}`) }}</span
                       ></a
                     >
                   </li>
@@ -96,14 +156,14 @@ import { ref } from "@vue/reactivity";
 import { onMounted } from "@vue/runtime-core";
 // import { watch } from "@vue/runtime-core";
 export default {
-  data: () => ({ show: false }),
+  data: () => ({ show: false, changeLang: false }),
   setup() {
     const links = ref([
-      { title: "Home", href: "#home" },
-      { title: "About Us", href: "#about" },
-      { title: "Our Services", href: "#service" },
-      { title: "Responsibilities", href: "#responsibilty" },
-      { title: "Country", href: "#country" },
+      { title: "HOME", href: "#home" },
+      { title: "ABOUT-US", href: "#about" },
+      { title: "OUR-SERVICES", href: "#service" },
+      { title: "RESPONSIBILITIES", href: "#responsibilty" },
+      { title: "COUNTRY", href: "#country" },
     ]);
     const scrollOffset = ref(0);
     onMounted(() => {
@@ -112,6 +172,15 @@ export default {
       });
     });
     return { links, scrollOffset };
+  },
+  watch: {
+    changeLang(val) {
+      if (val) {
+        this.$i18n.locale = "en";
+      } else {
+        this.$i18n.locale = "uz";
+      }
+    },
   },
 };
 </script>
@@ -125,5 +194,18 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+/* CHECKBOX TOGGLE SWITCH */
+/* @apply rules for documentation, these do not work as inline style */
+.toggle-checkbox:checked {
+  @apply: right-0 border-defaultOrange;
+  right: 0;
+  --tw-bg-opacity: 1;
+  border-color: rgba(255, 114, 58, var(--tw-bg-opacity));
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-defaultOrange;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 114, 58, var(--tw-bg-opacity));
 }
 </style>

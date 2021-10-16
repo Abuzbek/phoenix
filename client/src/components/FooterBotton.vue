@@ -2,16 +2,11 @@
   <footer class="pt-24 border-t border-gray-400">
     <div class="w-11/12 mx-auto px-4">
       <div class="grid xl:grid-cols-4 gap-5">
-        <div :data-aos-delay="200"
-            data-aos-duration="1000"
-            data-aos="fade-up">
+        <div :data-aos-delay="200" data-aos-duration="1000" data-aos="fade-up">
           <a href="#!">
             <img src="../assets/logo.svg" class="max-w-full h-auto" alt="" />
           </a>
-          <p class="text-gray-900 mt-3">
-            Lorem Ipsum is simply dummy text of the printing <br />
-            and typesetting industry.
-          </p>
+          <p class="text-gray-900 mt-3" v-html="$t('footer.title')"></p>
         </div>
         <div class="col-span-3 grid lg:grid-cols-5 sm:grid-cols-2 gap-5">
           <div
@@ -19,12 +14,22 @@
             data-aos-duration="1000"
             data-aos="fade-up"
           >
-            <h3 class="text-defaultOrange mb-4">Categories</h3>
+            <h3 class="text-defaultOrange mb-4">
+              {{ $t("footer.categories.title") }}
+            </h3>
             <ul>
-              <li>Marketing</li>
-              <li>Analytics</li>
-              <li>Commerce</li>
-              <li>Insights</li>
+              <li>
+                <a href="#!">{{ $t("footer.categories.link-1") }}</a>
+              </li>
+              <li>
+                <a href="#!">{{ $t("footer.categories.link-2") }}</a>
+              </li>
+              <li>
+                <a href="#!">{{ $t("footer.categories.link-3") }}</a>
+              </li>
+              <li>
+                <a href="#!">{{ $t("footer.categories.link-4") }}</a>
+              </li>
             </ul>
           </div>
           <div
@@ -33,10 +38,18 @@
             data-aos="fade-up"
           >
             <ul class="lg:mt-8">
-              <li>Pricing</li>
-              <li>Documentation</li>
-              <li>Guides</li>
-              <li>API Status</li>
+              <li>
+                <a href="#!"> {{ $t("footer.categories.link-5") }}</a>
+              </li>
+              <li>
+                <a href="#!"> {{ $t("footer.categories.link-6") }}</a>
+              </li>
+              <li>
+                <a href="#!"> {{ $t("footer.categories.link-7") }}</a>
+              </li>
+              <li>
+                <a href="#!"> {{ $t("footer.categories.link-8") }}</a>
+              </li>
             </ul>
           </div>
           <div
@@ -44,11 +57,19 @@
             data-aos-duration="1000"
             data-aos="fade-up"
           >
-            <h3 class="text-defaultOrange mb-4">About</h3>
+            <h3 class="text-defaultOrange mb-4">
+              {{ $t("footer.about.title") }}
+            </h3>
             <ul>
-              <li>About</li>
-              <li>Contact Us</li>
-              <li>Vacacy</li>
+              <li>
+                <a href="#!">{{ $t("footer.about.link-1") }}</a>
+              </li>
+              <li>
+                <a href="#!">{{ $t("footer.about.link-2") }}</a>
+              </li>
+              <li>
+                <a href="#!">{{ $t("footer.about.link-3") }}</a>
+              </li>
             </ul>
           </div>
           <div
@@ -56,11 +77,13 @@
             data-aos-duration="1000"
             data-aos="fade-up"
           >
-            <h3 class="text-defaultOrange mb-4">Other</h3>
+            <h3 class="text-defaultOrange mb-4">
+              {{ $t("footer.other.title") }}
+            </h3>
             <ul>
-              <li>Оферта</li>
-              <li>Правила пользования сайтом</li>
-              <li>Terms</li>
+              <li>{{ $t("footer.other.link-1") }}</li>
+              <li>{{ $t("footer.other.link-2") }}</li>
+              <li>{{ $t("footer.other.link-3") }}</li>
             </ul>
           </div>
         </div>
@@ -69,7 +92,7 @@
         class="footer-bottom flex items-center flex-wrap justify-between mt-10"
       >
         <p class="text-defaultGray">
-          © 2020 Workflow, Inc. All rights reserved.
+          {{ $t("footer.copy-year") }}
         </p>
         <ul class="flex items-center">
           <li>

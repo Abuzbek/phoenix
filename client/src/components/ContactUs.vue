@@ -28,23 +28,24 @@
         >
           <div class="w-full">
             <div class="top-title mb-10">
-              <h3 class="text-20px text-defaultOrange mb-3">Study sphere</h3>
+              <h3 class="text-20px text-defaultOrange mb-3">
+                {{ $t("contact.title") }}
+              </h3>
               <h2
                 class="sm:text-40px text-3xl font-bold text-defaultBlack mb-2"
               >
-                Which university will you choose?
+                {{ $t("contact.sub-title") }}
               </h2>
               <p class="text-title text-defaultGray">
-                Executive Trade International is an University Application
-                Centre
+                {{ $t("contact.text") }}
               </p>
             </div>
             <div class="submit-form">
               <form @submit.prevent="submitHandler">
                 <div class="name mb-5">
-                  <label for="name" class="block mb-3 text-lg font-semibold"
-                    >Your Name</label
-                  >
+                  <label for="name" class="block mb-3 text-lg font-semibold">{{
+                    $t("contact.name-input")
+                  }}</label>
                   <input
                     type="text"
                     name=""
@@ -54,9 +55,9 @@
                   />
                 </div>
                 <div class="name mb-5">
-                  <label for="email" class="block mb-3 text-lg font-semibold"
-                    >Your Email</label
-                  >
+                  <label for="email" class="block mb-3 text-lg font-semibold">{{
+                    $t("contact.email-input")
+                  }}</label>
                   <input
                     type="text"
                     name=""
@@ -66,9 +67,9 @@
                   />
                 </div>
                 <div class="name mb-5">
-                  <label for="area" class="block mb-3 text-lg font-semibold"
-                    >Comments</label
-                  >
+                  <label for="area" class="block mb-3 text-lg font-semibold">{{
+                    $t("contact.message-input")
+                  }}</label>
                   <textarea
                     name=""
                     id="area"
@@ -99,9 +100,9 @@
                       text-white
                     "
                   >
-                    <span class="block md:mr-36 sm:mr-24 mr-0 text-2xl"
-                      >Send comment</span
-                    >
+                    <span class="block md:mr-36 sm:mr-24 mr-0 text-2xl">{{
+                      $t("contact.send-button")
+                    }}</span>
                     <img
                       class="sm:block hidden"
                       src="../assets/arrow-apply.svg"

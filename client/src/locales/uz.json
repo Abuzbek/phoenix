@@ -1,3 +1,228 @@
 {
-  "message": "hello i18n !!"
+  "lang": "Uzbekcha",
+  "navbar": {
+    "HOME": "home",
+    "ABOUT-US": "about",
+    "OUR-SERVICES": "our services",
+    "RESPONSIBILITIES": "RESPONSIBILITIES",
+    "COUNTRY": "COUNTRY",
+    "Apply": "Apply"
+  },
+  "header": {
+    "title": "We Help to <span class='text-defaultOrange'>Build</span> Your Dream ",
+    "text": " We are always availed to consult on taking your higher education to the next level so you can stay competitive in the global world. We welcome the opportunity to work with you 'today' for 'tomorrow's' better career solutions. ",
+    "social": "SOCIAL MEDIA",
+    "next": "NEXT",
+    "prev": "PREV",
+    "Apply": "Apply now"
+  },
+  "services": {
+    "title": "Our services",
+    "sub-title": "We love to help you",
+    "text": "Executive Trade International is an University Application Centre",
+    "card": {
+      "title": "Career Counselling",
+      "text": "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "sub-title": "The act or experience of one that learns a computer program that makes learning fun",
+    "text-1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.",
+    "text-2": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.",
+    "link": "Learn more",
+    "card-1": {
+      "title": "100+",
+      "text": "Our students study abroud"
+    },
+    "card-2": {
+      "title": "50+",
+      "text": "Universities we’re working with"
+    },
+    "card-3": {
+      "title": "1000+",
+      "text": "People we met"
+    },
+    "card-4": {
+      "title": "1000+",
+      "text": "Minutes we were on plane"
+    }
+  },
+  "StudySphere": {
+    "title": "Study sphere",
+    "sub-title": "Which university will you choose?",
+    "text": "Which university will you choose?",
+    "card": [
+      {
+        "title": "Art & Design",
+        "text": "118 universities"
+      },
+      {
+        "title": "Development",
+        "text": "118 universities"
+      },
+      {
+        "title": "Business",
+        "text": "118 universities"
+      },
+      {
+        "title": "Marketing",
+        "text": "118 universities"
+      },
+      {
+        "title": "Finance",
+        "text": "118 universities"
+      },
+      {
+        "title": "Medical",
+        "text": "118 universities"
+      },
+      {
+        "title": "Lifestyle",
+        "text": "118 universities"
+      },
+      {
+        "title": "Data Science",
+        "text": "118 universities"
+      }
+    ]
+  },
+  "country": {
+    "title": "Country",
+    "sub-title": "Country",
+    "text": "Executive Trade International is an University Application Centre"
+  },
+  "news": {
+    "title": "News",
+    "sub-title": "Lots of new Blogs & News",
+    "text": "Executive Trade International is an University Application Centre",
+    "card": [
+      { "text": "Come On In. The Water’s Fine (Mostly)." },
+      { "text": "Trump Lays Plans to Reverse Obama’s Climate Change Legacy" },
+      { "text": "How a Little Bit of Hydra Regrows a Whole Animal" }
+    ]
+  },
+  "team": {
+    "title": "Our team",
+    "sub-title": "Explore Experienced Instructor",
+    "text": "Executive Trade International is an University Application Centre",
+    "card": [
+      {
+        "name": "John Zlathan",
+        "position": "CEO"
+      },
+      {
+        "name": "John Zlathan",
+        "position": "Co-Founder"
+      },
+      {
+        "name": "John Zlathan",
+        "position": "Software Developer"
+      },
+      {
+        "name": "John Zlathan",
+        "position": "CEO"
+      },
+      {
+        "name": "John Zlathan",
+        "position": "CEO"
+      },
+      {
+        "name": "John Zlathan",
+        "position": "Co-Founder"
+      },
+      {
+        "name": "John Zlathan",
+        "position": "Software Developer"
+      },
+      {
+        "name": "John Zlathan",
+        "position": "CEO"
+      }
+    ]
+  },
+  "clients": {
+    "title": "Our clients",
+    "sub-title": "Testimonials",
+    "text": "Executive Trade International is an University Application Centre",
+    "card": [
+      {
+        "name": "John Zlathan",
+        "message": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        "position": "CEO"
+      },
+      {
+        "name": "John Zlathan",
+        "message": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        "position": "Co-Founder"
+      },
+      {
+        "name": "John Zlathan",
+        "message": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        "position": "Software Developer"
+      },
+      {
+        "name": "John Zlathan",
+        "message": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        "position": "CEO"
+      },
+      {
+        "name": "John Zlathan",
+        "message": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        "position": "CEO"
+      },
+      {
+        "name": "John Zlathan",
+        "message": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.”",
+        "position": "Co-Founder"
+      }
+    ]
+  },
+  "WhyArewe": {
+    "title": "Why are we?",
+    "sub-title": "Why choose Phoenix?",
+    "text-1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.",
+    "text-2": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.",
+    "list": [
+      { "title": "There are many variations of passages of Lorem Ipsum." },
+      { "title": "There are many variations of passages of Lorem Ipsum." },
+      { "title": "There are many variations of passages of Lorem Ipsum." }
+    ]
+  },
+  "contact": {
+    "title": "Contact us",
+    "sub-title": "Contact with us",
+    "text": "Executive Trade International is an University Application Centre",
+    "name-input": "Your Name",
+    "email-input": "Your Email",
+    "message-input": "Comments",
+    "send-button": "Send comment"
+  },
+  "footer": {
+    "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "categories": {
+      "title": "Categories",
+      "link-1": "Marketing",
+      "link-2": "Analytics",
+      "link-3": "Commerce",
+      "link-4": "Insights",
+      "link-5": "Pricing",
+      "link-6": "Documentation",
+      "link-7": "Guides",
+      "link-8": "API Status"
+    },
+    "about": {
+      "title": "About",
+      "link-1": "About",
+      "link-2": "Contact Us",
+      "link-3": "Vacacy"
+    },
+    "other": {
+      "title": "Other",
+      "link-1": "Оферта",
+      "link-2": "Правила пользования сайтом",
+      "link-3": "Terms"
+    },
+    "copy-year": "© 2020 Workflow, Inc. All rights reserved."
+  }
 }

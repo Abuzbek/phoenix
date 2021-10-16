@@ -9,12 +9,14 @@
           data-aos="fade-up"
         >
           <div>
-            <h3 class="text-20px text-defaultOrange mb-3">Our services</h3>
+            <h3 class="text-20px text-defaultOrange mb-3">
+              {{ $t("services.title") }}
+            </h3>
             <h2 class="sm:text-40px text-3xl font-bold mb-2 text-defaultBlack">
-              We love to help you
+              {{ $t("services.sub-title") }}
             </h2>
             <p class="text-title text-defaultGray">
-              Executive Trade International is an University Application Centre
+              {{ $t("services.text") }}
             </p>
           </div>
         </div>
@@ -36,7 +38,7 @@
             :data-aos-delay="500 * (i + 1)"
             data-aos-duration="1000"
           >
-            <card-help v-bind="n" />
+            <card-help v-bind="n" :idx="i" />
           </div>
         </div>
       </div>
@@ -51,22 +53,19 @@ export default {
   data: () => {
     const card = [
       {
-        text: "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. ",
-        title: "Career Counselling",
+        callLang: "services.card",
         icon: helpCardIcon,
         iconColor: "bg-dark-card-1",
         color: "bg-ligth-card-1",
       },
       {
-        text: "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. ",
-        title: "Career Counselling",
+        callLang: "services.card",
         icon: helpCardIcon,
         iconColor: "bg-dark-card-2",
         color: "bg-ligth-card-2",
       },
       {
-        text: "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. ",
-        title: "Career Counselling",
+        callLang: "services.card",
         icon: helpCardIcon,
         iconColor: "bg-dark-card-3",
         color: "bg-ligth-card-3",

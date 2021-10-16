@@ -15,12 +15,12 @@
     <div class="container mx-auto px-4 relative z-10">
       <div class="mb-11 text-center">
         <div>
-          <h3 class="text-20px text-defaultOrange mb-3">Country</h3>
+          <h3 class="text-20px text-defaultOrange mb-3">{{$t("country.title")}}</h3>
           <h2 class="text-40px font-bold mb-2 text-defaultBlack">
-            Countries we covered
+            {{$t("country.sub-title")}}
           </h2>
           <p class="text-title text-defaultGray">
-            Executive Trade International is an University Application Centre
+            {{$t("country.text")}}
           </p>
         </div>
       </div>

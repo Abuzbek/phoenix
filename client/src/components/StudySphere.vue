@@ -2,12 +2,12 @@
   <div class="bg-ligth-card-1 py-28">
     <div class="container mx-auto px-4">
       <div class="top-title mb-10">
-        <h3 class="text-20px text-defaultOrange mb-3">Study sphere</h3>
+        <h3 class="text-20px text-defaultOrange mb-3">{{$t("StudySphere.title")}}</h3>
         <h2 class="sm:text-40px text-2xl font-bold text-defaultBlack mb-2">
-          Which university will you choose?
+          {{$t("StudySphere.sub-title")}}
         </h2>
         <p class="text-title text-defaultGray">
-          Executive Trade International is an University Application Centre
+          {{$t("StudySphere.text")}}
         </p>
       </div>
       <div class="card-grid grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
@@ -18,7 +18,7 @@
           data-aos-duration="1000"
           data-aos="fade-up"
         >
-          <study-card v-bind="n" />
+          <study-card v-bind="n" :idx="i" />
         </div>
       </div>
     </div>
@@ -34,51 +34,43 @@ export default {
     return {
       card: [
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Art & Design",
           iconColor: "bg-dark-card-2",
         },
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Development",
           iconColor: "bg-dark-card-1",
         },
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Business",
           iconColor: "bg-dark-card-4",
         },
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Marketing",
           iconColor: "bg-dark-card-3",
         },
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Finance",
           iconColor: "bg-dark-card-4",
         },
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Medical",
           iconColor: "bg-dark-card-2",
         },
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Lifestyle",
           iconColor: "bg-dark-card-3",
         },
         {
-          text: "118 universities",
+          callLang: "StudySphere.card",
           icon: CardHelp,
-          title: "Data Science",
           iconColor: "bg-dark-card-1",
         },
       ],
